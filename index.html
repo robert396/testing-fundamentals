@@ -12,9 +12,9 @@
 	<title>Testing Fundamentals</title>
 
         <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="./css/font-awesome-4.5.0.css" rel="stylesheet">
-        <link href="./css/base.css" rel="stylesheet">
+        <link href="./css/font-awesome-4.0.3.css" rel="stylesheet">
         <link rel="stylesheet" href="./css/highlight.css">
+        <link href="./css/base.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -25,14 +25,20 @@
         
     </head>
 
-    <body class="homepage">
+    <body>
 
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
 
         <!-- Collapsed navigation -->
         <div class="navbar-header">
-            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
 
             <!-- Main title -->
             <a class="navbar-brand" href=".">Testing Fundamentals</a>
@@ -40,15 +46,34 @@
 
         <!-- Expanded navigation -->
         <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
             
+            
+                <li class="active">
+                    <a href=".">Home</a>
+                </li>
+            
+            
+            </ul>
 
+            <!-- Search, Navigation and Repo links -->
             <ul class="nav navbar-nav navbar-right">
                 <li>
                     <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
                         <i class="fa fa-search"></i> Search
                     </a>
                 </li>
-                
+                <li class="disabled">
+                    <a rel="next" >
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="disabled">
+                    <a rel="prev" >
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
                 
             </ul>
         </div>
@@ -56,43 +81,113 @@
 </div>
 
         <div class="container">
-            
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#welcome-to-mkdocs">Welcome to MkDocs</a></li>
+        <li class="main active"><a href="#why-is-testing-necessary">Why Is Testing Necessary?</a></li>
         
-            <li><a href="#commands">Commands</a></li>
+            <li><a href="#causes-of-software-defects">Causes of Software Defects</a></li>
         
-            <li><a href="#project-layout">Project layout</a></li>
+            <li><a href="#the-role-of-testing">The Role of Testing</a></li>
+        
+            <li><a href="#testing-and-quality">Testing and Quality</a></li>
+        
+            <li><a href="#the-six-quality-characteristics">The Six Quality Characteristics</a></li>
+        
+            <li><a href="#quality-and-risk">Quality and Risk</a></li>
+        
+            <li><a href="#quality-assurance">Quality Assurance</a></li>
+        
+            <li><a href="#how-much-testing-is-enough">How Much Testing Is Enough?</a></li>
+        
+            <li><a href="#the-role-of-testers">The Role of Testers</a></li>
         
     
     </ul>
 </div></div>
-                <div class="col-md-9" role="main">
+            <div class="col-md-9" role="main">
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="http://mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
+<h1 id="why-is-testing-necessary">Why Is Testing Necessary?</h1>
+<p>In this day and age computers are used in practically everything as such failures can be expensive and or life threatening.</p>
+<p>For example:</p>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs help</code> - Print this help message.</li>
+<li>A computer controlled radiation and x-ray treatment machine for cancer</li>
+<li>A cooling system for a nuclear power plant</li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre></div>
-            
+<p>If a fault occurs in either of the given examples it could lead to dangerous consequences.</p>
+<h2 id="causes-of-software-defects">Causes of Software Defects</h2>
+<p>The cause of a software defect normally falls into the following three step process.</p>
+<ul>
+<li>A person makes an <strong>error</strong> (<strong>mistake</strong>)...</li>
+<li>... that may create a <strong>defect</strong> (<strong>fault</strong> or <strong>bug</strong>) in the software <em>or documents</em>...</li>
+<li>... which in software <em>may</em> cause a <strong>failure</strong> in operation</li>
+</ul>
+<p>Humans are <strong>not</strong> perfect and <strong><em>can/will</em></strong> make mistakes.</p>
+<ul>
+<li>Possibly caused by such things are pressure of work, tight deadlines, complex code, other system interactions
+and changing or unfamiliar technology.</li>
+</ul>
+<p>Failures can also be caused by environmental factors such as:</p>
+<ul>
+<li>Radiation, magnetism, electronic fields, complex code, complexity of infrastructure and pollution.</li>
+</ul>
+<h2 id="the-role-of-testing">The Role of Testing</h2>
+<p>Rigorous testing of <strong>systems</strong> and <strong>documents</strong> can help reduce the risk of <strong>failure</strong> and improve the <strong>quality</strong>
+of systems when they go in to use.</p>
+<p>Software testing may also need to meet; <strong>Legal</strong> requirements, <strong>Contractual</strong> requirements or Industry-specific standards.</p>
+<p>It is entirely possible to have a system that works perfectly but fails to meet the requirements.</p>
+<h2 id="testing-and-quality">Testing and Quality</h2>
+<p>Testing on its own does not improve the quality of the software, but until we test it, we cannot
+know what the quality of the software is.</p>
+<p>Quality is usually measured by the sum of <strong>defects</strong> found and how serious they are for both <strong>functional</strong>
+and <strong>non-functional</strong> characteristics of a system.</p>
+<h2 id="the-six-quality-characteristics">The Six Quality Characteristics</h2>
+<p>The six characteristics are:</p>
+<ul>
+<li>Functionality</li>
+<li>Reliability</li>
+<li>Usability</li>
+<li>Efficiency</li>
+<li>Maintainability</li>
+<li>Portability</li>
+</ul>
+<p>The first characteristic is tested by <strong>functional</strong> testing - which is testing what the system does, and not how 
+it does it.</p>
+<p>The last five characteristics are all tested by <strong>non-functional</strong> testing - which is testing how well it does.</p>
+<h2 id="quality-and-risk">Quality and Risk</h2>
+<p>The results of testing can give confidence in the quality of the software providing; the tests are properly designed
+<em>and</em> few or no defects are found <em>or</em> defects found are fixed and the quality improved.</p>
+<p>So a properly designed test can reduce risk of the software failing by; providing that a feature or function of the 
+software works <em>or</em> by proving that is doesn't!</p>
+<p>When designing a test always ask your self the following questions:</p>
+<ul>
+<li>Have I tested everything that needs to be tested?</li>
+<li>Have I tested both positive and negatives?</li>
+<li>Is there any permutations that I can think of that haven't been covered?</li>
+</ul>
+<h2 id="quality-assurance">Quality Assurance</h2>
+<p>Quality assurance is defect prevention and not defect detection.</p>
+<p>By understanding the root causes of <strong>defects</strong> found, lessons can be learned to improve the process for future projects;
+by helping prevent the same <strong>mistakes</strong> (<strong>errors</strong>) from being made - this applies to both testers and developers.</p>
+<h2 id="how-much-testing-is-enough">How Much Testing Is Enough?</h2>
+<p>Deciding on when the software is good enough requires an assessment of risk:</p>
+<ul>
+<li>Technical risk - The test environment not being ready on time.</li>
+<li>Safety risk - Is there a physical risk to humans should the software fail?</li>
+<li>Business risk - Could poor quality software cost the company money?</li>
+</ul>
+<p>The above are all examples of <strong>Product</strong> risk but there is another type of risk - <strong>Project</strong></p>
+<p>An example of a project risk is the project constraints such as; time, budget and even staff</p>
+<h2 id="the-role-of-testers">The Role of Testers</h2>
+<p>It is not up to the testers on when to release the software to the next stage of development or to the customer.</p>
+<p>Testers should however offer the relevant information to those that make the decisions so that they can be
+properly informed.</p></div>
         </div>
 
         <footer class="col-md-12">
             <hr>
             
-            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>
 
         <script src="./js/jquery-1.10.2.min.js"></script>
@@ -126,11 +221,5 @@ docs/
                 </div>
             </div>
         </div>
-
     </body>
 </html>
-
-<!--
-MkDocs version : 0.15.3
-Build Date UTC : 2016-06-16 11:20:32.143000
--->

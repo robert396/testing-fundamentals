@@ -2,23 +2,53 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Welcome to MkDocs\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "text": "Why Is Testing Necessary?\n\n\nIn this day and age computers are used in practically everything as such failures can be expensive and or life threatening.\n\n\nFor example:\n\n\n\n\nA computer controlled radiation and x-ray treatment machine for cancer\n\n\nA cooling system for a nuclear power plant\n\n\n\n\nIf a fault occurs in either of the given examples it could lead to dangerous consequences.\n\n\nCauses of Software Defects\n\n\nThe cause of a software defect normally falls into the following three step process.\n\n\n\n\nA person makes an \nerror\n (\nmistake\n)...\n\n\n... that may create a \ndefect\n (\nfault\n or \nbug\n) in the software \nor documents\n...\n\n\n... which in software \nmay\n cause a \nfailure\n in operation\n\n\n\n\nHumans are \nnot\n perfect and \ncan/will\n make mistakes.\n\n\n\n\nPossibly caused by such things are pressure of work, tight deadlines, complex code, other system interactions\nand changing or unfamiliar technology.\n\n\n\n\nFailures can also be caused by environmental factors such as:\n\n\n\n\nRadiation, magnetism, electronic fields, complex code, complexity of infrastructure and pollution.\n\n\n\n\nThe Role of Testing\n\n\nRigorous testing of \nsystems\n and \ndocuments\n can help reduce the risk of \nfailure\n and improve the \nquality\n\nof systems when they go in to use.\n\n\nSoftware testing may also need to meet; \nLegal\n requirements, \nContractual\n requirements or Industry-specific standards.\n\n\nIt is entirely possible to have a system that works perfectly but fails to meet the requirements.\n\n\nTesting and Quality\n\n\nTesting on its own does not improve the quality of the software, but until we test it, we cannot\nknow what the quality of the software is.\n\n\nQuality is usually measured by the sum of \ndefects\n found and how serious they are for both \nfunctional\n\nand \nnon-functional\n characteristics of a system.\n\n\nThe Six Quality Characteristics\n\n\nThe six characteristics are:\n\n\n\n\nFunctionality\n\n\nReliability\n\n\nUsability\n\n\nEfficiency\n\n\nMaintainability\n\n\nPortability\n\n\n\n\nThe first characteristic is tested by \nfunctional\n testing - which is testing what the system does, and not how \nit does it.\n\n\nThe last five characteristics are all tested by \nnon-functional\n testing - which is testing how well it does.\n\n\nQuality and Risk\n\n\nThe results of testing can give confidence in the quality of the software providing; the tests are properly designed\n\nand\n few or no defects are found \nor\n defects found are fixed and the quality improved.\n\n\nSo a properly designed test can reduce risk of the software failing by; providing that a feature or function of the \nsoftware works \nor\n by proving that is doesn't!\n\n\nWhen designing a test always ask your self the following questions:\n\n\n\n\nHave I tested everything that needs to be tested?\n\n\nHave I tested both positive and negatives?\n\n\nIs there any permutations that I can think of that haven't been covered?\n\n\n\n\nQuality Assurance\n\n\nQuality assurance is defect prevention and not defect detection.\n\n\nBy understanding the root causes of \ndefects\n found, lessons can be learned to improve the process for future projects;\nby helping prevent the same \nmistakes\n (\nerrors\n) from being made - this applies to both testers and developers.\n\n\nHow Much Testing Is Enough?\n\n\nDeciding on when the software is good enough requires an assessment of risk:\n\n\n\n\nTechnical risk - The test environment not being ready on time.\n\n\nSafety risk - Is there a physical risk to humans should the software fail?\n\n\nBusiness risk - Could poor quality software cost the company money?\n\n\n\n\nThe above are all examples of \nProduct\n risk but there is another type of risk - \nProject\n\n\nAn example of a project risk is the project constraints such as; time, budget and even staff\n\n\nThe Role of Testers\n\n\nIt is not up to the testers on when to release the software to the next stage of development or to the customer.\n\n\nTesters should however offer the relevant information to those that make the decisions so that they can be\nproperly informed.", 
             "title": "Home"
         }, 
         {
-            "location": "/#welcome-to-mkdocs", 
-            "text": "For full documentation visit  mkdocs.org .", 
-            "title": "Welcome to MkDocs"
+            "location": "/#why-is-testing-necessary", 
+            "text": "In this day and age computers are used in practically everything as such failures can be expensive and or life threatening.  For example:   A computer controlled radiation and x-ray treatment machine for cancer  A cooling system for a nuclear power plant   If a fault occurs in either of the given examples it could lead to dangerous consequences.", 
+            "title": "Why Is Testing Necessary?"
         }, 
         {
-            "location": "/#commands", 
-            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.", 
-            "title": "Commands"
+            "location": "/#causes-of-software-defects", 
+            "text": "The cause of a software defect normally falls into the following three step process.   A person makes an  error  ( mistake )...  ... that may create a  defect  ( fault  or  bug ) in the software  or documents ...  ... which in software  may  cause a  failure  in operation   Humans are  not  perfect and  can/will  make mistakes.   Possibly caused by such things are pressure of work, tight deadlines, complex code, other system interactions\nand changing or unfamiliar technology.   Failures can also be caused by environmental factors such as:   Radiation, magnetism, electronic fields, complex code, complexity of infrastructure and pollution.", 
+            "title": "Causes of Software Defects"
         }, 
         {
-            "location": "/#project-layout", 
-            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
-            "title": "Project layout"
+            "location": "/#the-role-of-testing", 
+            "text": "Rigorous testing of  systems  and  documents  can help reduce the risk of  failure  and improve the  quality \nof systems when they go in to use.  Software testing may also need to meet;  Legal  requirements,  Contractual  requirements or Industry-specific standards.  It is entirely possible to have a system that works perfectly but fails to meet the requirements.", 
+            "title": "The Role of Testing"
+        }, 
+        {
+            "location": "/#testing-and-quality", 
+            "text": "Testing on its own does not improve the quality of the software, but until we test it, we cannot\nknow what the quality of the software is.  Quality is usually measured by the sum of  defects  found and how serious they are for both  functional \nand  non-functional  characteristics of a system.", 
+            "title": "Testing and Quality"
+        }, 
+        {
+            "location": "/#the-six-quality-characteristics", 
+            "text": "The six characteristics are:   Functionality  Reliability  Usability  Efficiency  Maintainability  Portability   The first characteristic is tested by  functional  testing - which is testing what the system does, and not how \nit does it.  The last five characteristics are all tested by  non-functional  testing - which is testing how well it does.", 
+            "title": "The Six Quality Characteristics"
+        }, 
+        {
+            "location": "/#quality-and-risk", 
+            "text": "The results of testing can give confidence in the quality of the software providing; the tests are properly designed and  few or no defects are found  or  defects found are fixed and the quality improved.  So a properly designed test can reduce risk of the software failing by; providing that a feature or function of the \nsoftware works  or  by proving that is doesn't!  When designing a test always ask your self the following questions:   Have I tested everything that needs to be tested?  Have I tested both positive and negatives?  Is there any permutations that I can think of that haven't been covered?", 
+            "title": "Quality and Risk"
+        }, 
+        {
+            "location": "/#quality-assurance", 
+            "text": "Quality assurance is defect prevention and not defect detection.  By understanding the root causes of  defects  found, lessons can be learned to improve the process for future projects;\nby helping prevent the same  mistakes  ( errors ) from being made - this applies to both testers and developers.", 
+            "title": "Quality Assurance"
+        }, 
+        {
+            "location": "/#how-much-testing-is-enough", 
+            "text": "Deciding on when the software is good enough requires an assessment of risk:   Technical risk - The test environment not being ready on time.  Safety risk - Is there a physical risk to humans should the software fail?  Business risk - Could poor quality software cost the company money?   The above are all examples of  Product  risk but there is another type of risk -  Project  An example of a project risk is the project constraints such as; time, budget and even staff", 
+            "title": "How Much Testing Is Enough?"
+        }, 
+        {
+            "location": "/#the-role-of-testers", 
+            "text": "It is not up to the testers on when to release the software to the next stage of development or to the customer.  Testers should however offer the relevant information to those that make the decisions so that they can be\nproperly informed.", 
+            "title": "The Role of Testers"
         }
     ]
 }
